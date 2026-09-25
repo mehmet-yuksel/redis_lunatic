@@ -28,7 +28,7 @@ fn main(_: Mailbox<()>) {
                 println!("Listening on port: {}", port);
                 server.run();
             });
-            server.result();
+            let _ = server.result();
         }
     }
 }
